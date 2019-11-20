@@ -1,0 +1,247 @@
+http://datastore-query-service.master.ri.rms-internal.com/generic/sql,API/BVT
+https://one.master.ri.rms-internal.com/api/pm/analysis/load,API/BVT
+https://one.master.ri.rms-internal.com/api/import/edmimports?validateOnly=false,API/BVT
+https://dt-api.master.ri.rms-internal.com/v1/edmUpload,API/BVT
+https://one.master.ri.rms-internal.com/api/dm/datalibrary/searches,API/BVT
+https://one.master.ri.rms-internal.com/api/dm/datalibrary/portfolios/{InsuranceBookInfo.getPortfolios.get('ABC Specialty').getId},API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/datastore/cacheRDOView?rootPositionIdorStructureId={InsuranceBookInfo.getPortfolios.get('ABC Commercial').getId}&typeOfId=P&currencyCode=USD,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles?perilCode=EQ&modelRegionCode=NAEQ&modelSourceCode=RMS&softwareVersionCode=RL18&analysisType=Exceedance Probability,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/{InsuranceBookInfo.getInsuranceBookId}/portfolios,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/{InsuranceBookInfo.getInsuranceBookId}/perrisktreaties?portfolioIdVariationIdPair={InsuranceBookInfo.getPortfolios.get('ABC Specialty').getId}|1,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{threeTreatyPortfolioId},API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/runmodel,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/dashboards?currencyCode=USD&currencyScheme=RMS&currencyVintage=RL17&franchiseDeductible=false&groupBy=Admin1&groupBy=Peril&minLossThreshold=100&modelProfileId={RapInfo.getModelProfileId}&structureName={InsuranceBookInfo.getBookNameLowercase}|{threeTreatyPortfolioNameLowercase}&variationId={threeTreatyVariationId},API/BVT
+https://one.master.ri.rms-internal.com/api/accumulation/accumulationset/upload,API/BVT
+https://one.master.ri.rms-internal.com/api/accumulation/accumulation,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/accumulationdetail,API/BVT
+https://one.master.ri.rms-internal.com/api/dm/datalibrary/portfolios/{PortfolioInfo.getId},API/BVT
+https://one.master.ri.rms-internal.com/api/locationintelligence/job,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles?perilCode=FL&modelRegionCode=USFL&modelSourceCode=RMS&softwareVersionCode=HDv1.0&analysisType=Exceedance Probability,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysisprofiles,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysisprofiles/{RapInfo.getId},API/BVT
+https://one.master.ri.rms-internal.com/api/risk/outputprofiles/defaultMetrics,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/outputprofiles,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/outputprofiles/meta,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/outputprofiles/{OutputProfileInfo.getId},API/BVT
+https://one.master.ri.rms-internal.com/api/structure/structures,API/BVT
+https://one.master.ri.rms-internal.com/api/structure/structures/{StructureInfo.getId},API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/{RapInfo.getRapAnalysisWorkflowId},API/BVT
+https://one.master.ri.rms-internal.com/,API/BVT
+https://one.master.ri.rms-internal.com/api/edits/editsession/update/{replaceEditSessionId},API/BVT
+https://one.master.ri.rms-internal.com/api/import/mriimports?validateOnly=false,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/country?limit=250,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/admin1?limit=250,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/admin2?limit=250,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/postcode?limit=250,API/BVT
+https://one.master.ri.rms-internal.com/api/accumulation/accumulation/adhoc,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/accumulationsummary,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/projects/{ProjectInfo.getId}/projectContent,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/simulationsets?perilCode=WS&modelRegionCode=EUWS,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles?perilCode=WS&modelRegionCode=EUWS&modelSourceCode=RMS&softwareVersionCode=RL16&analysisType=Exceedance Probability,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysisprofiles/{InsuranceBookInfo.getRaps.get('MriTestDataGroupv16').getId},API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/{InsuranceBookInfo.getRaps.get('MriTestDataGroupv16').getRapAnalysisWorkflowId},API/BVT
+https://one.master.ri.rms-internal.com/api/risk/losstables?modelingUnitId={PortfolioInfo.getId},API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/nbengines/job,API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/notebooks,API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getProjectNotebookId}/paragraphs,API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getProjectNotebookId}/paragraphs/{ProjectInfo.getNotebookParagraphIds.get(0)},API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getProjectNotebookId}/paragraphs/{ProjectInfo.getNotebookParagraphIds.get(1)},API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getProjectNotebookId}/paragraphs/{ProjectInfo.getNotebookParagraphIds.get(2)},API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{PortfolioInfo.getId}?variationId=1&includeSummary=true,API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getProjectNotebookId}/paragraphs/{ProjectInfo.getNotebookParagraphId},API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getProjectNotebookId}/paragraphs/{ProjectInfo.getNotebookParagraphId},API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getProjectNotebookId}/paragraphs/{ProjectInfo.getNotebookParagraphId},API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getProjectNotebookId}/paragraphs/{ProjectInfo.getNotebookParagraphId},API/BVT
+https://one.master.ri.rms-internal.com/api/accumulation/accumulationset/summary,API/BVT
+https://one.master.ri.rms-internal.com/api/accumulation/accumulation/rollup,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/{PortfolioInfo.getImportActivityId},API/BVT
+https://one.master.ri.rms-internal.com/api/risk/pltmetrics/bulk?,API/BVT
+https://one.master.ri.rms-internal.com/api/ev/cluster/create,API/BVT
+https://one.master.ri.rms-internal.com/api/import/pltimports,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/replaceStructureRollupId,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles?perilCode=FL&modelRegionCode=EUFL&modelSourceCode=RMS&softwareVersionCode=RL18&analysisType=Exceedance Probability,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/replaceV18RapAnalysisId,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles?perilCode=FL&modelRegionCode=EUFL&modelSourceCode=RMS&softwareVersionCode=RL17&analysisType=Exceedance Probability,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/replaceV17RapAnalysisId,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/scenario,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/Broker,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/CurrencySchemeVintage,API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/api/datastore/referenceTables/CurrencySchemeVintage,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/currencyExchangeRates,API/BVT
+https://one.master.ri.rms-internal.com/api/auth/token/create,API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/api/auth/token/create,API/BVT
+https://one.master.ri.rms-internal.com/api/auth/token/refresh,API/BVT
+https://one.master.ri.rms-internal.com/api/import/edmimports?validateOnly=true,API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/api/import/edmimports?validateOnly=true,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/datastore/cacheRDOView?rootPositionIdorStructureId={PortfolioInfo.getId}&typeOfId=P&currencyCode=USD,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{PortfolioInfo.getId}?includeSummary=true,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/topcontract?limit=10,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/toprisk?limit=8,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/topgeoresolution?limit=10,API/BVT
+https://geoverse-metadata-api.map-dev.rms.com/metadata/v0.5/tileset,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/overview,API/BVT
+https://one.master.ri.rms-internal.com/api/em/card/mapadmin1,API/BVT
+https://one.master.ri.rms-internal.com/api/auth/users,API/BVT
+https://one.master.ri.rms-internal.com/api/auth/users/replaceCreatedUserId,API/BVT
+https://geoverse-metadata-api.map-dev.rms.com/metadata/v0.5/analyticsArtifact/usliquefaction,API/BVT
+https://one.master.ri.rms-internal.com/api/analytics/analytics,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/projects,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/runmodelNew,API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/composite/project/{ProjectInfo.getId}/analyses_and_loss_tables,API/BVT
+https://one.master.ri.rms-internal.com/api/analyst-console/notebooks/{ProjectInfo.getNotebook.getId}/paragraphs/{paragraphId},API/BVT
+https://rms-proxy.master.ri.rms-internal.com/li/locationintelligence,API/BVT
+https://one.master.ri.rms-internal.com/api/auth/users/current,API/BVT
+https://one.master.ri.rms-internal.com/project/new,API/BVT
+https://one.master.ri.rms-internal.com/databaseServers,API/BVT
+https://one.master.ri.rms-internal.com/databaseServers/,API/BVT
+https://one.master.ri.rms-internal.com/edmUpload,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/losstables?resultType=RiskElt,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/losstables/replaceRiskEltId/purged,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/outputprofiles/,API/BVT
+https://dt-api.master.ri.rms-internal.com/v1/databaseServers/,API/BVT
+https://dt-api.master.ri.rms-internal.com/v1/databaseServers,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/,API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/api/datastore/portfolios/,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/deleted,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/purge/,API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/api/datastore/portfolios/purge/,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{PortfolioInfo.getId}/modelingunits,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/EventRateScheme,API/BVT
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/,API/BVT
+healthcheck,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/metadata,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/{PortfolioInfo.getInsuranceBookId}/perrisktreaties,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/{PortfolioInfo.getInsuranceBookId}/portfolios/{PortfolioInfo.getId}/variations/1/treaties,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/{analysisId},API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/results?workflowId={workflowId},API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/CurrencyScheme?limit=100&offset=0,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/currencyExchangeRates?anchorCurrencyCode=USD&currencySchemeCode=RMS&asOfDate=2016-11-22&isDerived=false,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/projects/{ProjectInfo.getId},Weekly
+https://one.master.ri.rms-internal.com/api/structure/structures,Weekly
+https://one.master.ri.rms-internal.com/api/structure/structures/{StructureInfo.getId},Weekly
+https://one.master.ri.rms-internal.com/api/datastore/projects/short,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/projects/{ProjectInfo.getId}/projectContent/{StructureInfo.getContentHash},Weekly
+https://one.master.ri.rms-internal.com/api/datastore/projects/{ProjectInfo.getId}/projectContent/{PortfolioInfo.getContentHash},Weekly
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{PortfolioInfo.getId},Weekly
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks?sort=name&where=id in ({PortfolioInfo.getInsuranceBookId}),Weekly
+https://one.master.ri.rms-internal.com/api/datastore/projects/short?column={columnName}&sortOrder={sortOrderValue},Weekly
+https://one.master.ri.rms-internal.com/api/datastore/metadata,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/PostalCode?limit=1000&offset=0&where=countryPgfId=484 and admin1PgfId='2346282',Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/CurrencyScheme/metadata,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/CurrencyScheme?limit=100&offset=0,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/currencyExchangeRates?anchorCurrencyCode=USD&currencySchemeCode=RMS&asOfDate=2016-11-22&isDerived=false,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/EventRateScheme/file?where=perilCode=EQ,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/CurrencyScheme?limit=100&offset=0&sort=createDate&sortOrder=1,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/AccountingOrganization,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/AccountingOrganization?where=accountingOrganizationShortName='ReplaceOrgShortName',Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/Underwriter/file,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/Broker?limit=100&offset=0,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/ContractProduct?limit=100&offset=0,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/ContractProduct?where=productName='RMSBasicCAT',Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/Namespace?limit=100&offset=0,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/InjuryCostScheme,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/Namespace,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/InjuryCostCV,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/InjuryCostCV/file,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/Cedant,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/Currency/metadata,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/AccountingOrganization?offset=0,Weekly
+https://one.master.ri.rms-internal.com/,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/EventRate?limit=100&offset=0&where=eventRateSchemeId={replaceEventRateSchemeId},Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/InjuryCostScheme?limit=100&offset=0,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/InjuryCostAvg,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/currencyExchangeRates?anchorCurrencyCode=USD&currencySchemeCode=RMS&asOfDate=2019-10-31&isDerived=false,Weekly
+https://one.master.ri.rms-internal.com/api/exposure/templates/modelprofile?analysisType=EP&modelRegionCode=USFL&perilName=Flood&softwareVersion=HDv1.0&vendor=RMS,Weekly
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles?limit=100,Weekly
+https://one.master.ri.rms-internal.com/api/exposure/templateinstances/6,Weekly
+https://one.master.ri.rms-internal.com/api/exposure/templates/modelprofile?analysisType={ModelInfo.getAnalysisType}&modelRegionCode={ModelInfo.getModelRegionCode}&perilName={ModelInfo.getPerilName}&softwareVersion={ModelInfo.getSoftwareVersion}&vendor=RMS,Weekly
+https://one.master.ri.rms-internal.com/api/exposure/templateinstances/{ModelInfo.getTemplateId},Weekly
+https://one.master.ri.rms-internal.com/api/risk/analysis/{replaceAnalysisId},Weekly
+https://one.master.ri.rms-internal.com/api/risk/losstables?modelingUnitId=6526,Weekly
+https://one.master.ri.rms-internal.com/api/risk/losstables?modelingUnitId=13095,Weekly
+https://one.master.ri.rms-internal.com/api/exposure/templateinstances/20,Weekly
+https://one.master.ri.rms-internal.com/api/risk/analysisprofiles,Weekly
+https://one.master.ri.rms-internal.com/api/risk/analysisprofiles/summary,Weekly
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles?perilCode=EQ&modelRegionCode=NAEQ&modelSourceCode=RMS&softwareVersionCode=RL18&analysisType=Exceedance Probability,Weekly
+https://one.master.ri.rms-internal.com/api/risk/analysisprofiles/{RapInfo.getId},Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/EventRate/file?where=eventRateSchemeId={CustomEventRateInfo.getEventSchemeId}&projection=EventRateUnauditedView,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/eventRateAndScheme/file,Weekly
+https://one.master.ri.rms-internal.com/api/import/importPlt,Weekly
+https://one.master.ri.rms-internal.com/api/import/eltimports,Weekly
+https://one.master.ri.rms-internal.com/api/risk/analysis/runmodelNew,Weekly
+https://one.master.ri.rms-internal.com/api/risk/analysis,Weekly
+https://one.master.ri.rms-internal.com/api/risk/analysis/{ReplaceWorkFlowId},Weekly
+https://one.master.ri.rms-internal.com/api/risk/losstables?modelingUnitId={PortfolioInfo.getId},Weekly
+https://one.master.ri.rms-internal.com/api/execution/workflows/{ModelInfo.getWorkFlowId},Weekly
+https://one.master.ri.rms-internal.com/api/execution/workflows?ids={RapInfo.getRapAnalysisWorkflowId},Weekly
+https://one.master.ri.rms-internal.com/api/risk/scenario,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/auditlogs/contracts/{StructureInfo.getIdForTreaty('CAT1')},Weekly
+https://one.master.ri.rms-internal.com/api/import/edmimports?validateOnly=false,Weekly
+https://one.master.ri.rms-internal.com/api/dm/datalibrary/searches,Weekly
+https://one.master.ri.rms-internal.com/api/em/card/overview,Weekly
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/,Weekly
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/,Weekly
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/,Weekly
+https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/https://one.master.ri.rms-internal.com/,Weekly
+https://one.master.ri.rms-internal.com/api/em/card/riskpins,Weekly
+https://one.master.ri.rms-internal.com/api/dm/datalibrary/searchentities,Weekly
+https://one.master.ri.rms-internal.com/api/dm/datalibrary/searchfilterkeys,Weekly
+https://one.master.ri.rms-internal.com/api/dm/datalibrary/portfolios/{portfolioId},Weekly
+https://one.master.ri.rms-internal.com/api/dm/datalibrary/structures/{structureId}?type=2,Weekly
+https://one.master.ri.rms-internal.com/api/structure/structures/replaceStructureId,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/ContractProductParameter?limit=100&offset=0,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/replaceInsuranceBook/perrisktreaties?portfolioIdVariationIdPair=replacePortfolioId|1&onlyAssociated=true,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/{PortfolioInfo.getInsuranceBookId}/portfolios/{PortfolioInfo.getId}/variations/{PerRiskTreatyInfo.getVariationId}/treaties,Weekly
+http://datastore-query-service.master.ri.rms-internal.com/generic/sql,Weekly
+https://one.master.ri.rms-internal.com/api/risk/analysis/runmodel/portfolios/{PortfolioInfo.getId}?variationId=1&modelProfileType=Scenario,Weekly
+https://one.master.ri.rms-internal.com/api/risk/modelprofiles?id={replaceModelProfileId},Weekly
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/{PortfolioInfo.getInsuranceBookId}/portfolios,Weekly
+https://one.master.ri.rms-internal.com/api/edits/editsession/update/{replaceEditSessionId},Weekly
+https://one.master.ri.rms-internal.com/api/edits/editsession/,Weekly
+https://one.master.ri.rms-internal.com/api/edits/editsession/{replaceEditSessionId}/commit,Weekly
+https://one.master.ri.rms-internal.com/api/accumulation/accumulation/rollup,Weekly
+https://one.master.ri.rms-internal.com/api/execution/workflows/type,Weekly
+https://one.master.ri.rms-internal.com/api/execution/workflows?,Weekly
+https://one.master.ri.rms-internal.com/api/accumulation/accumulation/adhoc,Weekly
+https://one.master.ri.rms-internal.com/api/export/pltexports/{replaceNoGroupPltDownloadId}?pagenumber=1,Weekly
+https://one.master.ri.rms-internal.com/api/execution/workflows/{ProjectInfo.getNotebook.getJobId},Weekly
+https://one.master.ri.rms-internal.com//api/accumulation/accumulation,Weekly
+https://one.master.ri.rms-internal.com/api/datastore/auditlogs/contracts/{TreatyInfo.getID},Release Candidate
+https://one.master.ri.rms-internal.com/api/datastore/auditlogs/contracts/{TreatyInfo.getID},API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/CurrencyScheme?offset=0,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/CurrencyScheme?offset=0&sort=createDate&sortOrder=1,API/BVT
+https://one.master.ri.rms-internal.com/api/exposure/imports/{replaceAnalysisId}/summary,API/BVT
+https://one.master.ri.rms-internal.com/api/exposure/imports/{PortfolioInfo.getImportActivityId}/log,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{PortfolioInfo.getId},API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{PortfolioInfo.getId}/contracts/replaceBromptonContractId,API/BVT
+https://one.master.ri.rms-internal.com/api/exposure/imports/{jobId}/summary,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysisprofiles/summary,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/metadata/Contract/Declarations,API/BVT
+https://one.master.ri.rms-internal.com/api/structure/structures/{StructureInfo.getId},Release Candidate
+https://one.master.ri.rms-internal.com/,Release Candidate
+https://one.master.ri.rms-internal.com/api/risk/losstables/compoundlookup,Release Candidate
+https://one.master.ri.rms-internal.com/api/exposure/templateinstances/{ModelInfo.getTemplateId},Release Candidate
+https://one.master.ri.rms-internal.com/api/risk/analysis/runmodelNew,Release Candidate
+https://one.master.ri.rms-internal.com/api/em/card/accumulationdetail,Release Candidate
+https://one.master.ri.rms-internal.com/api/import/edmimports?validateOnly=false,Release Candidate
+https://rms-proxy.master.ri.rms-internal.com/li/locationintelligence,Release Candidate
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{PortfolioInfo.getId}?includeSummary=true,Release Candidate
+https://one.master.ri.rms-internal.com/api/auth/users/helptoken,API/BVT
+https://one.master.ri.rms-internal.com/api/execution/workflows?ids={AnalysisInfo.getJobId},API/BVT
+https://one.master.ri.rms-internal.com/api/accumulation/accumulation/adhoc,Release Candidate
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/{PortfolioInfo.getInsuranceBookId}/portfolios/{PortfolioInfo.getId}/variations/{PerRiskTreatyInfo.getVariationId}/treaties,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/insuranceBooks/{PortfolioInfo.getInsuranceBookId}/portfolios/{PortfolioInfo.getId}/variations/{PerRiskTreatyInfo.getVariationId}/treaties,Release Candidate
+https://one.master.ri.rms-internal.com/api/datastore/portfolios/{InsuranceBookInfo.getPortfolios.get('P_1').getId}/contracts/contractId,Release Candidate
+https://one.master.ri.rms-internal.com/api/execution/workflows?ids={PortfolioInfo.getImportActivityId()},API/BVT
+https://one.master.ri.rms-internal.com/api/execution/workflows?ids={replaceAnalysisId},API/BVT
+https://one.master.ri.rms-internal.com/api/risk/analysis/{AnalysisInfo.getJobId},API/BVT
+https://one.master.ri.rms-internal.com/api/import/pltimports?currencyAsOfDate={TodaysDate}&currencyCode=USD&currencyScheme=RMS&modelProfileId={importModelProfileId}&numberOfYears=6&positionName={replaceBookName}%7Cgbfl_34loc%21gr&simulations=80000&startYear=&variationId=1,API/BVT
+https://rms-proxy.master.ri.rms-internal.com/edmimports,API/BVT
+https://one.master.ri.rms-internal.com/api/risk/losstables?resultType=Rdm,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/ContractType?limit=100&offset=0,API/BVT
+https://one.master.ri.rms-internal.com/api/datastore/referenceTables/ContractProduct?limit=100&offset=0,API/BVT
+https://one.master.ri.rms-internal.com/api/import/edmimports?validateOnly=false,Full Regression
+https://one.master.ri.rms-internal.com/,Full Regression
+https://one.master.ri.rms-internal.com/api/accumulation/accumulation/adhoc,Full Regression
